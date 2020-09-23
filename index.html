@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- js bootstrap -->
+    <script src="../js/all.js"></script>
+    <!-- font awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet"> 
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Change Background Color</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Budget App</h1>
+    </header> 
+    <main class="main">
+        <section class="body-app">
+            <div class="input-values">
+                <div class="budget-value">
+                    <label for="budget">please enter your budget</label> <br>
+                    <input type="number" name="budget" class="budget-input"> <br>
+                    <button type="button" class="calculate-budget">Calculate</button>
+                </div>
+                <div class="expense-value">
+                    <div class="what-expense">
+                        <label for="what-for">Please enter on what did you expense money</label> <br>
+                        <input type="text" name="what-for" class="expense-type-input">
+                    </div>
+                    <div class="amount">
+                        <label for="amount-expense">Please enter expense amount</label> <br>
+                        <input type="number" name="amount-expense" class="expense-input">
+                        <button type="button" class="calculate-expense">Add expense</button>
+                    </div>
+                </div>
+            </div>
+            <div class="show-value">
+                <div class="col-divs">
+                    <div class="budget-show">
+                        <h3 class="title-budget">budget</h3>
+                        <span class="center-font"><i class="fas fa-money-bill-alt"></i></span>
+                        <h3 class="budget-amount">$ <span class="budget-total">0</span></h3>
+                    </div>
+                    <div class="expenses-show">
+                        <h3 class="title-budget">Expenses</h3>
+                        <span class="center-font"><i class="fas fa-money-check"></i></span>
+                        <h3 class="expenses-amount">$ <span class="expenses-total">0</span></h3>
+                    </div>
+                    <div class="balance-show">
+                        <h3 class="title-balance">balance</h3>
+                        <span class="center-font"><i class="fas fas fa-dollar-sign"></i></span>
+                        <h3 class="balance-amount">$ <span class="balance-total">0</span></h3>
+                    </div>
+                </div>
+                <div class="expense-value-list">
+                    <div class="info-expense">
+                        <h3 class="expense-name-info">expense title</h3>
+                        <h3 class="expense-value-info">expense value </h3>
+                    </div>
+                    <div class="expense-list">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>  
+
+    <!-- javascript si jquerry -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
